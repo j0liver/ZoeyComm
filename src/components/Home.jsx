@@ -4,6 +4,7 @@ import Nav from './Nav'
 import HeroCarousel from './HomeComponents/HeroCarousel'
 import HomeText from './HomeComponents/HomeText'
 import HomeCards from './HomeComponents/HomeCards'
+import Footer from './Footer'
 const Home = () => {
 
     return(
@@ -12,6 +13,7 @@ const Home = () => {
             <HeroCarousel />
             <HomeText />
             <HomeCards />
+            <Footer />
         </section>
     )
 }
