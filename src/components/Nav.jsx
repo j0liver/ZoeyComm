@@ -34,19 +34,14 @@ const NavBar = (props) => {
             <Collapse isOpen={isOpen} navbar>
             <Nav className="ml-auto" navbar>
                 <NavItem>
-                    <NavLink href='https://buildweek-parkpassport.github.io/ParkPassport-Landing-page/public/index.html' >Home</NavLink>
+                    <NavLink href='' >Home</NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink href='https://buildweek-parkpassport.github.io/ParkPassport-Landing-page/public/about.html' >About</NavLink>
+                    <NavLink href='' >About</NavLink>
                 </NavItem>
                 <NavItem>
-                    <Link to='/login/'>
-                        <NavLink >Login</NavLink>
-                    </Link>
-                </NavItem>
-                <NavItem>
-                    <Link to='/signup/'>
-                        <NavLink >Signup</NavLink>
+                    <Link to='/Contact/'>
+                        <NavLink >Contact</NavLink>
                     </Link>
                 </NavItem>
             </Nav>
