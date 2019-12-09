@@ -7,7 +7,7 @@ import HomeCards from './HomeComponents/HomeCards'
 import Footer from './Footer'
 import '../App.css';
 
-import  { HomePageContainer }  from './componentStyles'
+import  { HomePageContainer, styledFooter }  from './componentStyles'
 const Home = () => {
 
     return(

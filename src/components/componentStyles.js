@@ -23,19 +23,25 @@ export const HomePageContainer = styled.div`
     width: 80%; 
     margin 2% auto
 `
+export const HomeTextContainer = styled.div`
+    margin-bottom: 4%;
+`
 export const HomeCard = styled.div`
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     color: green;
     max-width: 100%;
-    
+    margin-bottom: 3%;
 `
 export const ReversedHomeCard = styled.div`
     display: flex;
     flex-direction: row-reverse
     justify-content: space-evenly;
+    align-items: center;
     color: green;
     max-width: 100%;
+    margin-bottom: 3%;
 `
 
 export const ImageContainer = styled.div`
@@ -52,4 +58,11 @@ export const HomeCardImage = styled.img`
 `
 export const TextContainer = styled.div`
     width: 60%;
+`
+
+///Footer///////////////////////////////
+
+export const styledFooter = styled.footer`
+    font-size: 2.5rem;
+    color: blue;
 `
