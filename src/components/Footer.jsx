@@ -1,25 +1,49 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMapMarkedAlt, faEnvelope, faMobileAlt } from '@fortawesome/free-solid-svg-icons'
 import { faTwitter, faFacebook, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { ContactCards, ContactCard, Box, SocialContainer } from './componentStyles'
+import vetLogo from '../imgs/vetLogo.jpg'
 
-import { styledFooter } from '../components/componentStyles'
+import { IconsSection } from './componentStyles'
 const Footer = () => {
     
     return(
-        <styledFooter>
-            <section>
+        <div>
+            <IconsSection>
+                <ContactCards>
+                    <ContactCard>
+                        <FontAwesomeIcon icon={faMapMarkedAlt} />
+                        <Box />
+                        <p>Boise, Idaho</p>
+                     </ContactCard>
+                     <ContactCard>
+                        <FontAwesomeIcon icon={faEnvelope} />
+                        <Box />
+                        <p>Boise, Idaho</p>
+                     </ContactCard>
+                     <ContactCard>
+                        <FontAwesomeIcon icon={faMobileAlt} />
+                        <Box />
+                        <p>Boise, Idaho</p>
+                     </ContactCard>   
+                </ContactCards>
+                <SocialContainer>
+                    <FontAwesomeIcon icon={faLinkedin} />
+                    <FontAwesomeIcon icon={faFacebook} />
+                    <FontAwesomeIcon icon={faTwitter} />
+                </SocialContainer>
+                
                 <div>
-                    <img src="" alt=""/>
+                    <img src={vetLogo} alt=""/>
                 </div>
-                <FontAwesomeIcon icon={faLinkedin} />
-                <FontAwesomeIcon icon={faFacebook} />
-                <FontAwesomeIcon icon={faTwitter} />
-            </section>
+                
+            </IconsSection>
             <section>
                 <p>&copy; ZoeyComm 2020</p>
             </section>
 
-        </styledFooter>
+        </div>
     )
 }
 
