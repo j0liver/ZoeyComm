@@ -2,14 +2,14 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMapMarkedAlt, faEnvelope, faMobileAlt } from '@fortawesome/free-solid-svg-icons'
 import { faTwitter, faFacebook, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import { ContactCards, ContactCard, Box, SocialContainer } from './componentStyles'
+import { ContactCards, ContactCard, Box, SocialContainer, FooterContainer } from './componentStyles'
 import vetLogo from '../imgs/vetLogo.jpg'
 
 import { IconsSection } from './componentStyles'
 const Footer = () => {
     
     return(
-        <div>
+        <FooterContainer>
             <IconsSection>
                 <ContactCards>
                     <ContactCard>
@@ -43,7 +43,7 @@ const Footer = () => {
                 <p>&copy; ZoeyComm 2020</p>
             </section>
 
-        </div>
+        </FooterContainer>
     )
 }
 

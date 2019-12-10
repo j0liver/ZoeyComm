@@ -7,13 +7,15 @@ import HomeCards from './HomeComponents/HomeCards'
 import Footer from './Footer'
 import '../App.css';
 
-import  { HomePageContainer, styledFooter }  from './componentStyles'
+import  { HomePageContainer, CarouselContainer }  from './componentStyles'
 const Home = () => {
 
     return(
         <section>
             <Nav />
-            <HeroCarousel />
+            <CarouselContainer>
+                <HeroCarousel />
+            </CarouselContainer>
             <HomePageContainer >
                 <HomeText />
                 <HomeCards />

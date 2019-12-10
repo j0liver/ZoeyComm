@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 // import styled from "styled-components";
 import { Link } from "react-router-dom";
-// import logo from '../image/logo.png'
+import logo from '../imgs/logo.png'
 import {
     Collapse,
     Navbar,
@@ -24,23 +24,27 @@ const NavBar = (props) => {
        
     <div>
         <Navbar color="light" light expand="md">
-            {/* <Link to="/">
+            <Link to="/">
                 <NavbarBrand>
-                    <img className="yeet" src = {logo}/>
+                    <img src = {logo}/>
                 </NavbarBrand>
             </Link>
-             */}
+            
             <NavbarToggler onClick={toggle} />
             <Collapse isOpen={isOpen} navbar>
             <Nav className="ml-auto" navbar>
                 <NavItem>
-                    <NavLink href='' >Home</NavLink>
+                    <Link to='/'>
+                        <NavLink >Home</NavLink>
+                    </Link>
                 </NavItem>
                 <NavItem>
-                    <NavLink href='' >About</NavLink>
+                    <Link to='/About'>
+                        <NavLink >About</NavLink>
+                    </Link>
                 </NavItem>
                 <NavItem>
-                    <Link to='/Contact/'>
+                    <Link to='/Contact'>
                         <NavLink >Contact</NavLink>
                     </Link>
                 </NavItem>

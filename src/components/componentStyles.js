@@ -13,50 +13,74 @@ import styled from 'styled-components'
 //         color: #23293B;
 //     }
 // `
+
+export const CarouselContainer = styled.div`
+    
+`
 export const HomePageContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center; 
-    border: 1px solid blue;
+    
     margin-top: 2%;
     width: 80%; 
     margin 2% auto
 `
 export const HomeTextContainer = styled.div`
-    margin-bottom: 4%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
 `
 export const HomeCard = styled.div`
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    color: green;
+    color: black;
     max-width: 100%;
-    margin-bottom: 3%;
+    margin: 3% 0;
+    padding-right: 10px;
+    
+    background-color: #a9a9a9;
 `
 export const ReversedHomeCard = styled.div`
     display: flex;
     flex-direction: row-reverse
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    color: green;
+    color: black;
     max-width: 100%;
     margin-bottom: 3%;
 `
 
 export const ImageContainer = styled.div`
-    min-width: 10px;
+    
     width: 37%;
     object-fit: contain;
-    border: 1px solid blue;
+    
 `
 export const HomeCardImage = styled.img`
     max-width: 100%;
-    border: 1px solid blue;
+    
     
 `
 export const TextContainer = styled.div`
     width: 60%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    font-size: .8em;
+`
+export const HomeButton = styled.button`
+    background-color: white;
+    padding: 0% 2%;
+    margin: 1% 0;
+    border: 1.75px solid lightblue;
+    border-radius: 5px;
+    &:Hover:
 `
 
 ///Footer///////////////////////////////
@@ -67,7 +91,9 @@ export const IconsSection = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid pink;
+    
+    background-color: black;
+    color: white;
 `
 export const ContactCards = styled.div`
     display: flex;
@@ -75,8 +101,8 @@ export const ContactCards = styled.div`
     justify-content: space-evenly;
 `
 export const ContactCard = styled.div`
-    width: 25%;
-    border-bottom: 3px solid purple;
+    width: 15%;
+    border-bottom: 3px solid lightblue;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -84,11 +110,11 @@ export const ContactCard = styled.div`
     justify-content: space-between;
     padding-top: 15px;
     border-radius: 5px;
-    
+    font-size: 1.6rem;
     
 `
 export const Box = styled.div`
-    border: 1px solid black;
+    border: 1px solid lightblue;
     width: 20%;
     margin-top: 20px;
 `
@@ -97,5 +123,21 @@ export const SocialContainer = styled.div`
     margin: 3%
     display: flex;
     justify-content: space-evenly;
+
+`
+export const FooterContainer = styled.div `
+    background-color: black;
+`
+
+
+/* About styles*///////////////////////////////////////////////
+
+export const AboutImgContainer = styled.div`
+
+`
+export const AboutImg = styled.img`
+
+`
+export const AboutTextContainer = styled.div`
 
 `
